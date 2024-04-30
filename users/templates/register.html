@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}
+  <title>Register</title>
+{% endblock title %}
+
+{% block content %}
+<div class='container'>
+  <h1>Todolist Login Page</h1>
+    <form method="POST" class="mt-5">
+        {% csrf_token %}
+        {{ register_forms.as_p }}
+    <button type="submit">Register</button>
+    </form>
+</div>
+{% endblock content %}
