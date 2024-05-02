@@ -3,18 +3,24 @@
 
 {% block title %}
   <title>Index</title>
-{% endblock title %}
+{% endblock %}
 
 {% block content %}
 <div class="container text-center">
+</br>
   <div class="row">
     <div class="col-lg">
-      <img scr={% static "images/animals.jpg" %} alt="Animal">
+      {% comment %} <img src="{% static 'images/animal.jpg' %}" alt="Animal"> {% endcomment %}
+      <img src="{% static 'images/animal.jpg' %}" alt="Animal">
     </div>
     <div class="col-lg">
-      <img scr={% static "images/img_rose.jpg" %} alt="Rose">
+      <img src="{% static 'images/animal.jpg' %}" alt="Rose">
+    </div>
+    <div class="col-lg">
+      <img src="{% static 'images/animal.jpg' %}" alt="Rose">
     </div>
   </div>
+</br>
   <div class="row">
     <p class="h1 fst-italic text-primary">This is my creation for my app.</h1></p>
     <p>So i can design this with my own innovations.</p>
@@ -22,4 +28,4 @@
     <center><a href="{% url 'todolist' %}"><button type="button" class="btn btn-primary btn-lg">Let's Go</button></a></center>
   </div>
 </div>
-{% endblock content %}
+{% endblock %}

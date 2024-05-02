@@ -64,7 +64,7 @@ def index(request):
 
 def contact(request):
     context={
-        'contact_text':"Welcome all to my contact page!"
+        'contact_text':"Welcome All !"
     }
     return render(request,'contact.html',context)
 
